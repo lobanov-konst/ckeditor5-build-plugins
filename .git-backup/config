@@ -1,0 +1,16 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+	ignorecase = true
+	precomposeunicode = true
+[remote "old-origin"]
+	url = https://github.com/ckeditor/ckeditor5-build-classic.git
+	fetch = +refs/heads/*:refs/remotes/old-origin/*
+[branch "stable"]
+	remote = old-origin
+	merge = refs/heads/stable
+[remote "origin"]
+	url = git@github.com:lobanov-konst/ckeditor5-build-plugins.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
