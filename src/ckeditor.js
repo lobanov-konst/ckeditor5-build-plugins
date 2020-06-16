@@ -41,75 +41,75 @@ export default class ClassicEditor extends ClassicEditorBase {
 
 // Plugins to include in the build.
 ClassicEditor.builtinPlugins = [
-    Essentials,
-    UploadAdapter,
-    Autoformat,
-    Alignment,
-    Bold,
-    Italic,
-    BlockQuote,
-    CKFinder,
-    EasyImage,
-    Heading,
-    Image,
-    ImageCaption,
-    ImageStyle,
-    ImageToolbar,
-    ImageUpload,
-    Indent,
-    IndentBlock,
-    Link,
-    List,
-    MediaEmbed,
-    Paragraph,
-    PasteFromOffice,
-    Table,
-    TableToolbar,
-    TextTransformation,
-    FontSize,
-    FontColor,
-    FontFamily
+	Essentials,
+	UploadAdapter,
+	Autoformat,
+	Alignment,
+	Bold,
+	Italic,
+	BlockQuote,
+	CKFinder,
+	EasyImage,
+	Heading,
+	Image,
+	ImageCaption,
+	ImageStyle,
+	ImageToolbar,
+	ImageUpload,
+	Indent,
+	IndentBlock,
+	Link,
+	List,
+	MediaEmbed,
+	Paragraph,
+	PasteFromOffice,
+	Table,
+	TableToolbar,
+	TextTransformation,
+	FontSize,
+	FontColor,
+	FontFamily
 ];
 
 // Editor configuration.
 ClassicEditor.defaultConfig = {
-    toolbar: {
-        items: [
-            'heading',
-            '|',
-            'alignment',
-            'bold',
-            'italic',
-            'link',
-            'bulletedList',
-            'numberedList',
-            '|',
-            'indent',
-            'outdent',
-            '|',
-            'imageUpload',
-            'blockQuote',
-            'insertTable',
-            'mediaEmbed',
-            'undo',
-            'redo'
-        ]
-    },
-    image: {
-        toolbar: [
-            'imageStyle:full',
-            'imageStyle:side',
-            '|',
-            'imageTextAlternative'
-        ]
-    },
-    table: {
-        contentToolbar: [
-            'tableColumn',
-            'tableRow',
-            'mergeTableCells'
-        ]
-    },
-    // This value must be kept in sync with the language defined in webpack.config.js.
-    language: 'en'
+	toolbar: {
+		items: [
+			'heading',
+			'|',
+			'alignment',
+			'bold',
+			'italic',
+			'link',
+			'bulletedList',
+			'numberedList',
+			'|',
+			'indent',
+			'outdent',
+			'|',
+			'imageUpload',
+			'blockQuote',
+			'insertTable',
+			'mediaEmbed',
+			'undo',
+			'redo'
+		]
+	},
+	image: {
+		toolbar: [
+			'imageStyle:full',
+			'imageStyle:side',
+			'|',
+			'imageTextAlternative'
+		]
+	},
+	table: {
+		contentToolbar: [
+			'tableColumn',
+			'tableRow',
+			'mergeTableCells'
+		]
+	},
+	// This value must be kept in sync with the language defined in webpack.config.js.
+	language: 'en'
 };
